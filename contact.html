@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <style>
+    body {
+      background: #181818;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .contact-form {
+      background: #232323;
+      padding: 36px 32px;
+      border-radius: 14px;
+      box-shadow: 0 4px 24px rgba(1,129,69,0.13);
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+      margin-bottom: 8px;
+      background: #2e2e2e;
+      color: #fff;
+      outline: none;
+      transition: box-shadow 0.2s;
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      box-shadow: 0 0 0 2px #018145;
+    }
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 80px;
+      max-height: 200px;
+    }
+    .submit-btn {
+      background: #018145;
+      color: #fff;
+      border: none;
+      padding: 14px 0;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: box-shadow 0.3s, background 0.3s;
+      box-shadow: 0 0 0 #00ffae;
+      position: relative;
+    }
+    .submit-btn:hover {
+      box-shadow: 0 0 12px 2px #00ffae, 0 0 32px 4px #00ffae;
+      background: #00c97b;
+      color: #fff;
+      text-shadow: 0 0 8px #00ffae;
+    }
+    .shake {
+      animation: shake 0.4s;
+    }
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      20% { transform: translateX(-8px); }
+      40% { transform: translateX(8px); }
+      60% { transform: translateX(-8px); }
+      80% { transform: translateX(8px); }
+      100% { transform: translateX(0); }
+    }
+  </style>
+</head>
+<body>
+  <form class="contact-form" id="contactForm" autocomplete="off">
+    <input type="text" id="name" placeholder="Name" />
+    <input type="email" id="email" placeholder="Email" />
+    <textarea id="message" placeholder="Message"></textarea>
+    <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+  </form>
+  
+</body>
+</html>

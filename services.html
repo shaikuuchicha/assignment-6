@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f6f6;
+    }
+    .modules-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 60px 0 0 0;
+    }
+    .module-card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.13);
+      padding: 36px 32px 28px 32px;
+      width: 260px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .module-card:hover {
+      box-shadow: 0 12px 32px rgba(1,129,69,0.25), 0 2px 8px rgba(0,0,0,0.10);
+      transform: translateY(-8px) scale(1.03);
+    }
+    .module-icon {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: #018145;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 18px;
+      transition: background 0.4s, transform 0.6s;
+      box-shadow: 0 2px 12px rgba(1,129,69,0.13);
+      cursor: pointer;
+    }
+    .module-icon:hover {
+      background: #b7f0d5;
+      color: #018145;
+      transform: rotate(360deg) scale(1.08);
+    }
+    .module-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #018145;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .module-desc {
+      font-size: 1rem;
+      color: #333;
+      text-align: center;
+      margin: 0;
+    }
+    </style>
+</head>
+<body>
+  <div class="modules-section">
+    <div class="module-card">
+      <div class="module-icon" title="Web Design">
+        💻
+      </div>
+      <div class="module-title">Web Design</div>
+      <div class="module-desc">Modern and responsive website design for your business.</div>
+    </div>
+    <div class="module-card">
+      <div class="module-icon" title="App Development">
+        📱
+      </div>
+      <div class="module-title">App Development</div>
+      <div class="module-desc">Custom mobile app solutions for Android and iOS platforms.</div>
+    </div>
+    <div class="module-card">
+      <div class="module-icon" title="SEO">
+        🚀
+      </div>
+      <div class="module-title">SEO Optimization</div>
+      <div class="module-desc">Boost your online presence and search engine ranking.</div>
+    </div>
+  </div>
+</body>
+</html>
